@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  </head>
+  <body  style="background-color: #003a70;">
+    <div class="container" id="adi">
+    <nav class="navbar navbar-expand-lg navbar-light  fixed-top" style="background-color: white;">
+        <div class="container-fluid">
+          <img src="image/dl.webp" alt="logo" height="70px" width="80px">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-5">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html"><b>HOME</b></a>
+              </li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               <b>  DOCTORS  </b> 
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="index.html">Immunologists</a></li>
+                    <li><a class="dropdown-item" href="index.html">Cardiologists</a></li>
+                    <li><a class="dropdown-item" href="index.html">Dermatologists</a></li>
+                    <li><a class="dropdown-item" href="index.html">Endocrinologists</a></li>
+                    <li><a class="dropdown-item" href="index.html">Gastroenterologists</a></li>
+                    <li><a class="dropdown-item" href="index.html">Nephrologists</a></li>
+                    <li><a class="dropdown-item" href="index.html">Neurologists</a></li>
+                    <li><a class="dropdown-item" href="index.html">Gynecologists</a></li>
+                    <li><a class="dropdown-item" href="index.html">Ophthalmologists</a></li>
+                    <li><a class="dropdown-item" href="index.html">Orthopaedic</a></li>
+                  
+                </ul>
+              </li>
+  
+            
+  
+              <li class="nav-item">
+                <a class="nav-link" href="review.html"><b>  REVIEW </b> </a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="login.html"><b>  LOGIN/SIGNUP  </b></a>
+              </li>
+  
+            </ul>
+  
+           
+          </div>
+        </div>
+      </nav>
+
+      <div class="container mb-4">
+
+        <div class="row" >
+               
+          <div class="col-sm-6"  style="margin-top: 130px; background-color: white; border-radius: 10px; height:580px;" >
+    
+    
+                <h2 class="mb-4 mt-2 text-center" >SIGNUP</h2>
+                 
+    <form>
+    <div class="mb-2">
+      <label for="exampleFormControlInput1" class="form-label"><b>Username</b></label>
+      <input type="text" class="form-control" id="username" placeholder="Enter your name">
+    </div>
+    
+    <div class="mb-2">
+      <label for="exampleFormControlInput1" class="form-label"><b>Email</b></label>
+      <input type="email" class="form-control" id="email" placeholder="Enter your email" >
+    </div>
+
+    <div class="mb-2">
+        <label for="exampleFormControlInput1" class="form-label"><b>Phone</b></label>
+        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone" maxlength="10" minlength="10">
+      </div>
+
+     
+
+      <div class="mb-2">
+        <label for="exampleFormControlInput1" class="form-label"><b>Password</b></label>
+        <input type="password" class="form-control" id="password" placeholder="Enter your password" >
+      </div>
+
+      <div class="mb-2">
+        <label for="exampleFormControlInput1" class="form-label"><b>Confirm Password</b></label>
+        <input type="password" class="form-control" id="confirm_password" placeholder="Confirm password" onchange="valid()">
+      </div>
+      <p id="para"></p>
+
+      <div class="form-check d-flex justify-content-center mb-3">
+        <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
+        <label class="form-check-label" >
+          I agree all statements in <a href="index.html">Terms of service</a>
+        </label>
+      </div>
+    <div class="text-center">
+    <button class="btn btn-primary mb-4" type="submit" style="width: 150px;" onclick="saveData()"><a  href="#" style="color: white;text-decoration: none;">Register</a></button>
+    
+    </div>     
+    </form>
+               
+            </div>
+
+            <div class="col-sm-6" style="margin-top:300px;">
+
+
+                <div class="text" style="color: white;margin-left: 60px;">
+                    <h4> "DoctorLink - bridging the gap between you and quality healthcare, your well-being is our priority.<br><br> Register now to schedule appointments with top-notch doctors. </h4>
+                  </div>
+  
+              </div>
+            
+          </div>
+        
+        </div>
+      </div>
+
+
+
+      <hr style="background-color: white; ">
+      <footer style="background-color:#003a70; margin-top: 10px;">
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <h4><a style="color: white; text-decoration: none;" href="#id1">About us</a></h4>
+              <h6 style="color: white">DoctorLink is an online appointment booking website which helps user to interact with the doctors and book their appointment online.</h6>
+            </div>
+          
+            <div class="col-sm-4">
+              <h4 style="color: white;">Contact Us</h4>
+              <div class="phone">
+                <a href="#"><i class="fas fa-phone-volume" style="color:white ;"></i>+91 6395100894</a>
+              </div>
+              <div class="email">
+                <a href="#"><i class="fas fa-envelope" style="color:white ;"></i>bhanurajput6395@gmail.com</a>
+              </div>
+              <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f" style="color:white ;"></i></a>
+                <a href="#"><i class="fab fa-instagram" style="margin-left: 20px;color: white;"></i></a>
+                <a href="#"><i class="fab fa-twitter"style="margin-left: 20px;color: white;"></i></a>
+                <a href="#"><i class="fab fa-youtube"style="margin-left: 20px;color: white;"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"style="margin-left: 20px;color: white;"></i></a>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <h4 style="color: white;">Our Services</h4>
+              <div><a href="index.html" style="color:white ;">Find a Doctor</a></div>
+            <div><a href="index.html" style="color:white ;">Book an Appointment</a></div>
+            <div><a href="review.html" style="color:white ;">Review</a></div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="bottom mt-3">
+          <p style="text-align:center;color: white;">Copyright © 2023 <a href="index.html" style="color: white;">DoctorLink</a> All rights reserved</p>
+        </div>
+      
+      </footer>
+
+       <script>
+function valid() {
+let x=document.getElementById("password");
+let y=document.getElementById("confirm_password");
+if(x.value!=y.value){
+  document.getElementById("para").innerHTML="Password not match";
+  document.getElementById("para").style.color="red";
+  x.value="";
+  y.value="";
+}
+else{
+  document.getElementById("para").innerHTML="";
+}
+}
+
+
+
+
+const arr = new Map([
+  ["mukul", "mukul@123"]
+ 
+]);
+        function saveData(){
+
+
+
+
+          let m=document.getElementById("username").value;
+          let n=document.getElementById("email").value;
+          let o=document.getElementById("phone").value;
+          let p=document.getElementById("password").value;
+          let q=document.getElementById("confirm_password").value;
+          
+    
+        
+   
+
+arr.set(m,p);
+/* console.log(arr.get("mukul"));  */
+
+
+
+
+let t="";
+t+=`
+<nav class="navbar navbar-expand-lg navbar-light  fixed-top" style="background-color: white;">
+      <div class="container-fluid">
+        <img src="image/dl.webp" alt="logo" height="70px" width="80px">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-5">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html"><b>HOME</b></a>
+            </li>
+           
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             <b>  DOCTORS  </b> 
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="index.html">Immunologists</a></li>
+                    <li><a class="dropdown-item" href="index.html">Cardiologists</a></li>
+                    <li><a class="dropdown-item" href="index.html">Dermatologists</a></li>
+                    <li><a class="dropdown-item" href="index.html">Endocrinologists</a></li>
+                    <li><a class="dropdown-item" href="index.html">Gastroenterologists</a></li>
+                    <li><a class="dropdown-item" href="index.html">Nephrologists</a></li>
+                    <li><a class="dropdown-item" href="index.html">Neurologists</a></li>
+                    <li><a class="dropdown-item" href="index.html">Gynecologists</a></li>
+                    <li><a class="dropdown-item" href="index.html">Ophthalmologists</a></li>
+                    <li><a class="dropdown-item" href="index.html">Orthopaedic</a></li>
+                  
+                </ul>
+            </li>
+
+           
+
+            <li class="nav-item">
+              <a class="nav-link" href="review.html"><b>  REVIEW </b> </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"><b>  LOGIN/SIGNUP  </b></a>
+            </li>
+
+          </ul>
+
+         
+        </div>
+      </div>
+    </nav>
+    
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-sm-6" style="margin-top: 290px;">
+       
+          <div class="heading" style="color: white;">
+            <h1><i>DoctorLink</i></h1><br>
+            <h3>Your virtual gateway to expert care!! </h3>
+          </div>
+        </div>
+      
+        
+   
+      <div class="col-sm-6"  style="margin-top: 200px; background-color: white; border-radius: 10px;" >
+
+
+            <h2 class="mb-4 mt-2 text-center" >Login to your Account</h2>
+             
+<form>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label"><b>Username</b></label>
+  <input type="text" class="form-control" id="name" placeholder="Enter your name">
+</div>
+
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label"><b>Password</b></label>
+  <input type="password" class="form-control" id="pass" placeholder="Enter your password">
+</div>
+<div class="text-center">
+<button class="btn btn-primary " type="submit" onclick="muk()"  style="width: 150px;"><a style="color: white; text-decoration: none;" href="#">LOGIN</a></button>
+<p class="mt-4" style="color:black; text-align:center;">OR</p>
+<button class="btn btn-primary mb-3" type="submit"  style="width: 150px;"><a style="color: white; text-decoration: none;" href="signup.html">SIGNUP</a></button>
+</div>     
+</form>
+           
+        </div>
+      </div>
+    
+    </div>
+  </div>
+`
+if(m!="" && n!="" && o!="" && p!="" && q!=""){
+document.getElementById("adi").innerHTML=t;}
+else{
+  alert("Please enter all required field");
+}
+        }
+
+
+        function muk(){
+          let m =document.getElementById("name").value;
+      let n =document.getElementById("pass").value;
+
+      
+          arr.forEach (function(value, key) {
+console.log(value);
+console.log(key)
+ }
+);
+      
+    
+    arr.forEach(function(key,value){
+      if(m==value && n==key && m!="" && n!=""){
+              alert("you are successfully logged in");
+             window.open("index.html"); 
+              return;
+          }
+     
+     
+
+      
+         } );
+         alert("incorrect credentials");
+         document.getElementById("name").value="";
+     document.getElementById("pass").value="";
+   }
+
+
+  
+
+
+
+
+
+
+       </script>
+
+
+
+
+  </body>
+</html>

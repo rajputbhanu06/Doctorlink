@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  </head>
+  <body  style="background-color: #003a70;">
+    <nav class="navbar navbar-expand-lg navbar-light  fixed-top" style="background-color: white;">
+      <div class="container-fluid">
+        <img src="image/dl.webp" alt="logo" height="70px" width="80px">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-5">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html"><b>HOME</b></a>
+            </li>
+           
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             <b>  DOCTORS  </b> 
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="index.html">Immunologists</a></li>
+                  <li><a class="dropdown-item" href="index.html">Cardiologists</a></li>
+                  <li><a class="dropdown-item" href="index.html">Dermatologists</a></li>
+                  <li><a class="dropdown-item" href="index.html">Endocrinologists</a></li>
+                  <li><a class="dropdown-item" href="index.html">Gastroenterologists</a></li>
+                  <li><a class="dropdown-item" href="index.html">Nephrologists</a></li>
+                  <li><a class="dropdown-item" href="index.html">Neurologists</a></li>
+                  <li><a class="dropdown-item" href="index.html">Gynecologists</a></li>
+                  <li><a class="dropdown-item" href="index.html">Ophthalmologists</a></li>
+                  <li><a class="dropdown-item" href="index.html">Orthopaedic</a></li>
+                
+              </ul>
+            </li>
+
+            
+
+            <li class="nav-item">
+              <a class="nav-link" href="review.html"><b>  REVIEW </b> </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"><b>  LOGIN/SIGNUP  </b></a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    
+  <div class="container mb-4">
+
+    <div class="row">
+
+      <div class="col-sm-6" style="margin-top: 290px;">
+       
+          <div class="heading" style="color: white;">
+            <h1><i>DoctorLink</i></h1><br>
+            <h3>Your virtual gateway to expert care!! </h3>
+          </div>
+        </div>
+      
+        
+   
+      <div class="col-sm-6"  style="margin-top: 200px; background-color: white; border-radius: 10px;" >
+
+
+            <h2 class="mb-4 mt-2 text-center" >Login to your Account</h2>
+             
+<form>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label"><b>Username</b></label>
+  <input type="text" class="form-control" id="name" placeholder="Enter your name">
+</div>
+
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label"><b>Password</b></label>
+  <input type="password" class="form-control" id="pass" placeholder="Enter your password">
+</div>
+<div class="text-center">
+<button class="btn btn-primary " type="submit" onclick="muk()"  style="width: 150px;"><a style="color: white; text-decoration: none;" href="#">LOGIN</a></button>
+<p class="mt-4" style="color:black; text-align:center;">OR</p>
+<button class="btn btn-primary mb-3" type="submit"  style="width: 150px;"><a style="color: white; text-decoration: none;" href="signup.html">SIGNUP</a></button>
+</div>     
+</form>
+           
+        </div>
+      </div>
+    
+    </div>
+  
+       
+
+  <hr style="background-color: white; ">
+  <footer style="background-color:#003a70; margin-top: 10px;">
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h4><a style="color: white; text-decoration: none;" href="#id1">About us</a></h4>
+          <h6 style="color: white">DoctorLink is an online appointment booking website which helps user to interact with the doctors and book their appointment online.</h6>
+        </div>
+      
+        <div class="col-sm-4">
+          <h4 style="color: white;">Contact Us</h4>
+          <div class="phone">
+            <a href="#"><i class="fas fa-phone-volume" style="color:white ;"></i>+91 6395100894</a>
+          </div>
+          <div class="email">
+            <a href="#"><i class="fas fa-envelope" style="color:white ;"></i>bhanurajput6395@gmail.com</a>
+          </div>
+          <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f" style="color:white ;"></i></a>
+            <a href="#"><i class="fab fa-instagram" style="margin-left: 20px;color: white;"></i></a>
+            <a href="#"><i class="fab fa-twitter"style="margin-left: 20px;color: white;"></i></a>
+            <a href="#"><i class="fab fa-youtube"style="margin-left: 20px;color: white;"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"style="margin-left: 20px;color: white;"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <h4 style="color: white;">Our Services</h4>
+          <div><a href="index.html" style="color:white ;">Find a Doctor</a></div>
+        <div><a href="index.html" style="color:white ;">Book an Appointment</a></div>
+        <div><a href="review.html" style="color:white ;">Review</a></div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="bottom mt-3">
+      <p style="text-align:center;color: white;">Copyright © 2023 <a href="index.html" style="color: white;">DoctorLink</a> All rights reserved</p>
+    </div>
+  
+  </footer>
+  
+
+
+
+
+
+
+
+
+
+
+  <script>
+
+    let arr=[{Username:"mukul", Password:"mukul@123"},{Username:"aditya", Password:"aditya@123"},{Username:"arpit", Password:"arpit@123"},{Username:"belal", Password:"belal@123"}];
+
+     function muk(){
+      
+        let m =document.getElementById("name").value;
+        let n =document.getElementById("pass").value;
+        for(let i=0;i<arr.length;i++){
+            if(m.toLowerCase()==arr[i].Username && n.toLowerCase()==arr[i].Password){
+                alert("you are successfully logged in");
+               window.open("index.html"); 
+                return;
+            }
+        }
+        alert("incorrect credentials");
+        document.getElementById("name").value="";
+       document.getElementById("pass").value="";
+       
+     }
+
+
+    
+
+</script>
+
+
+  </body>
+</html>
